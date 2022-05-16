@@ -1,0 +1,153 @@
+
+
+html,body{
+
+    color: black;
+    background: #fff;
+    font-size: 62.5%;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto',sans-serif;
+}
+
+
+.row{
+   margin:auto ;
+   max-width: 118rem;
+
+}
+#hero{
+    height: 100vh;
+    background:yellow url(../img/flower.jpg) no-repeat center top / cover;
+    overflow: hidden;
+    position: relative;
+}
+.cleafix::after{
+    content: '';
+    display: block;
+    clear: both;
+
+
+}
+
+.logo{
+    margin-top: 4.5rem;
+    flood-color: left;
+}
+.logo img{
+    width: 4rem;
+}
+.menu-icon{
+    float: right;
+   
+}
+.menu-icon ion-icon {
+    color: black;
+    font-size: 3.5rem;
+    border: 1 rem solid #fff;
+}
+.hero-text-box{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50% , -50%);
+ text-align: center;
+
+}
+h1{
+    font-size: 6.5rem;
+    text-transform: uppercase;
+    color: blueviolet;
+    letter-spacing: .3rem;
+    margin: 1rem 0;
+    display: inline-block;
+   
+
+}
+h1::before{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background:blueviolet ;
+    display: block;
+}
+h1::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background:blueviolet ;
+    display: block;
+}
+.hero-text-box span{
+ display:block;
+font-size: 2.3rem;
+ color: blueviolet;
+
+}
+.next-section{
+   
+    text-align: center;
+
+}
+.next-section a{
+    width: 4rem;
+    height: 4rem;
+   position: absolute;
+   bottom: 4.5rem;
+   left: 0;
+   right: 0;
+   margin: auto;
+}
+.next-section a ion-icon{
+font-size: 5rem;
+color: blueviolet;
+
+}
+/*==================
+ About section
+ =====================*/
+section{
+    padding: 12rem 0;
+}
+.about-container{
+   display: grid;
+   grid-template-columns:
+    1fr 1fr;
+   grid-gap:4rem;
+}
+.paul{
+    width: 100%;
+    clip-path: polygon(30% 0%,70% 0%,100% 30%,100% 70%,70% 100%,30% 100%,0% 70%, 0% 30%);
+}
+h4{
+    font-family: 'Raleway',sans-serif;
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.6rem;
+}
+.about-description{
+    margin: 3rem 0;
+
+}
+.btn{
+    width: 200px;
+    background: black;
+    color: #fff;
+    text-transform: capitalize;
+     font-size: 1.6rem;
+     display:inline-block;
+     text-align: center;
+     padding: 10px 0px;
+     border: 2px solid transparent;
+     transition: .5s;
+}
+.btn-full{
+    background: brown;
+}
+.btn-full:hover{
+    background: transparent;
+    color: brown;
+    border-color: brown;
+
+}
